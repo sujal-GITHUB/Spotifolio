@@ -1,4 +1,4 @@
-# Spotifolio
+# 🎧 Spotifolio
 
 Spotifolio is a developer portfolio designed with a Spotify-inspired user interface. It combines aesthetics and functionality to effectively showcase technical skills, professional experience, and personal projects. This portfolio offers a distinctive way for developers to present their work in a structured and engaging format.
 
