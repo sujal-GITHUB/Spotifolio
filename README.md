@@ -18,10 +18,10 @@ Spotifolio is a developer portfolio designed with a Spotify-inspired user interf
 
 ## Technology Stack
 
-- **Frontend:** React.js, TypeScript, Vite
-- **Styling:** Tailwind CSS, Ant Design
+- **Frontend:** React.js, TypeScript
+- **Styling:** Tailwind CSS, SCSS
 - **Icons:** `react-icons`, `devicons-react`
-- **Routing and State Management:** React Router, Redux (optional)
+- **Routing and State Management:** React Router, Redux
 - **Deployment Options:** GitHub Pages, Vercel, Netlify
 
 ---
