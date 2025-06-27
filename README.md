@@ -64,6 +64,40 @@ To run Spotifolio locally, follow these steps:
 1. **Clone the repository:**
    ```
    git clone https://github.com/sujal-GITHUB/Spotifolio.git
-   
    cd spotifolio
    ```
+2. **Install dependencies**
+   ```
+   yarn install
+   ```
+3. **Start the development server**
+   ```
+   npm run dev
+   ```
+4. **Build for production**
+   ```
+   npm run build
+   ```
+---
+
+## Contribution Guidelines
+
+- Contributions to Spotifolio are welcome! To contribute:
+- Fork the repository
+- Create a feature branch (git checkout -b feature/your-feature)
+- Commit your changes (git commit -m 'Add some feature')
+- Push to the branch (git push origin feature/your-feature)
+- Open a Pull Request describing your changes
+- Please ensure your code follows the existing style conventions and includes appropriate tests where applicable.
+
+---
+
+## License
+Spotifolio is open-source and available under the MIT License.
+
+---
+
+## Acknowledgments
+- Inspired by the elegant design principles of Spotify’s user interface
+- Thanks to the open-source community and contributors of the libraries utilized
+- Special appreciation for the users who provide feedback and support
