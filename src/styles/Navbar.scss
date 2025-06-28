@@ -106,6 +106,16 @@
 }
 
 .navigation-button {
+  padding: 2px;
+  border-radius: 30px;
+  justify-content: center;
+  background-color: #1f1f1f;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.navigation-button-home {
   padding: 11px;
   border-radius: 30px;
   justify-content: center;

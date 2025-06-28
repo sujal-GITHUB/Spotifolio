@@ -5,22 +5,6 @@
   align-items: center;
   flex-direction: column-reverse;
 
-  background: linear-gradient(-45deg, #541d0c, #40081e, #084359, #054233);
-  background-size: 400% 400%;
-
-  animation: gradient 25s ease infinite;
-
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
 
   .album-cover {
     height: 70px;
