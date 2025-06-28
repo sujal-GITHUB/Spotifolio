@@ -1,4 +1,7 @@
-const getPath = (path: string) => `${process.env.PUBLIC_URL}/${path}`;
+const getPath = (path: string) => {
+  const base = process.env.PUBLIC_URL?.replace(/\/$/, '') ?? '';
+  return `${base}${path}`;
+};
 
 export const getSongPath = (song: string) => getPath(`/songs/${song}`);
 
