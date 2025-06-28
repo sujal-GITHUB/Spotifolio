@@ -10,6 +10,7 @@ import { useAppDispatch, useAppSelector } from '../../../../store/store';
 
 // I18n
 import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
 
 const getIcon = (volume: number) => {
   if (volume === 0) {
@@ -33,13 +34,18 @@ export const VolumeControls = () => {
   const dispatch = useAppDispatch();
   const { muted, volume } = useAppSelector((state) => state.playingBar);
 
+  useEffect(() => {
+    const audio = document.getElementById('audio') as HTMLAudioElement;
+    if (audio) audio.muted = muted;
+  }, [muted]);
+
   return (
     <div className='volume-control-container'>
       <Space style={{ display: 'flex' }}>
         <Tooltip title={muted ? t('Unmute') : t('Mute')}>
           <div
             onClick={() => {
-              dispatch(playingBarActions.setVolume({ volume: muted ? volume : 0 }));
+              dispatch(playingBarActions.setMuted(!muted));
             }}
           >
             {getIcon(muted ? 0 : volume)}

@@ -6,6 +6,7 @@ import {
   play,
   setPlayerVolume,
   startAudio,
+  unmute,
 } from '../../player';
 
 // Constants
@@ -107,6 +108,14 @@ const playingBarSlice = createSlice({
       } else {
         state.muted = false;
         setPlayerVolume(action.payload.volume);
+      }
+    },
+    setMuted(state, action: PayloadAction<boolean>) {
+      state.muted = action.payload;
+      if (action.payload) {
+        mute();
+      } else {
+        unmute();
       }
     },
   },
