@@ -1,7 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "Spotifolio",
   "version": "2.0.1",
-  "homepage": "https://francoborrelli.github.io/portfolio/",
+  "homepage": "https://github.com/sujal-GITHUB/Spotifolio",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
