@@ -26,8 +26,24 @@ const ExpandOutButton: FC<FullScreenPlayerProps> = (props) => {
 
 export const FullScreenPlayer: FC<FullScreenPlayerProps> = (props) => {
   return (
-    <div className='Full-screen-page'>
-      <div></div>
+    <div className='Full-screen-page' style={{ position: 'relative', overflow: 'hidden' }}>
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100vw',
+          height: '100vh',
+          objectFit: 'cover',
+          zIndex: -1,
+        }}
+      >
+        <source src="/portfolio/videos/1.mp4"/>
+      </video>
       <div style={{ width: '100%', padding: 60 }}>
         <Row gutter={[24, 24]} justify='center' style={{ alignItems: 'baseline' }}>
           <Col span={24}>

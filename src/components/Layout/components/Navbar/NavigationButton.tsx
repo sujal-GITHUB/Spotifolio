@@ -16,4 +16,14 @@ const NavigationButton: FC<NavigationButtonProps> = ({ onClick, text, icon }) =>
   );
 };
 
-export default NavigationButton;
+const NavigationButtonHome: FC<NavigationButtonProps> = ({ onClick, text, icon }) => {
+  return (
+    <Tooltip placement='bottom' title={text}>
+      <button className='navigation-button-home' onClick={onClick}>
+        {icon}
+      </button>
+    </Tooltip>
+  );
+};
+
+export { NavigationButton, NavigationButtonHome };

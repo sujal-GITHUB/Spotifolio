@@ -3,7 +3,6 @@ import { FC } from 'react';
 
 interface NowPlayingCardProps {
   title: string;
-
   extra?: any;
   children?: any;
   image?: string;
@@ -18,14 +17,34 @@ export const NowPlayingCard: FC<NowPlayingCardProps> = (props) => {
         <div
           className='playing-now-card-image'
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%), url("${props.image}")`,
+            backgroundImage: `url("${props.image}")`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            width: '100%',
+            aspectRatio: '1 / 1', // Ensures square image, adjust as needed
+            position: 'relative',
           }}
         >
-          <div className='playing-now-card-image-text'>
-            <div data-encore-id='text'>
-              <div className='zZdI03asKaUCNlbhjDAv'>{props.imageTitle}</div>
+          {props.imageTitle && (
+            <div
+              className='playing-now-card-image-text'
+              style={{
+                position: 'absolute',
+                bottom: 0,
+                left: 0,
+                width: '100%',
+                background: 'rgba(0,0,0,0.5)',
+                color: '#fff',
+                padding: '4px 8px',
+                boxSizing: 'border-box',
+              }}
+            >
+              <div data-encore-id='text'>
+                <div className='zZdI03asKaUCNlbhjDAv'>{props.imageTitle}</div>
+              </div>
             </div>
-          </div>
+          )}
         </div>
       ) : null}
 

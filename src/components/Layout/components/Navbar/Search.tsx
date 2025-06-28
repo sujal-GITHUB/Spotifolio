@@ -1,5 +1,5 @@
 import { Input, Space } from 'antd';
-import NavigationButton from './NavigationButton';
+import { NavigationButtonHome } from './NavigationButton';
 import { ActiveHomeIcon, BrowseIcon, HomeIcon, SearchIcon } from '../../../Icons';
 
 // Utils
@@ -20,7 +20,7 @@ export const Search = () => {
 
   return (
     <Space size={10} align='center'>
-      <NavigationButton
+      <NavigationButtonHome
         text={t('Home')}
         icon={isHome ? <ActiveHomeIcon /> : <HomeIcon />}
         onClick={() => navigate('/')}

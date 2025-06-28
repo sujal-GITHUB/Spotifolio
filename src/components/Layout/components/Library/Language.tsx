@@ -47,7 +47,7 @@ export const LanguageButton = memo(() => {
         }}
       >
         <Space align='center'>
-          <WorldIcon /> {collapsed ? '' : currentLanguage?.label}
+          <WorldIcon /> 
         </Space>
       </button>
     </>

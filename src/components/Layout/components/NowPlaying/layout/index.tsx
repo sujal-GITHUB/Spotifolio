@@ -1,6 +1,5 @@
 import type { FC } from 'react';
 
-import { Col, Row } from 'antd';
 import { CloseIcon } from '../../../../Icons';
 
 // Redux
@@ -16,30 +15,33 @@ const CloseButton = () => {
   const dispatch = useAppDispatch();
 
   return (
-    <div className='playing-section-close-button'>
-      <button
-        onClick={() => {
-          dispatch(libraryActions.removeSongPlaying());
-        }}
-      >
-        <CloseIcon />
-      </button>
-    </div>
+    <button
+      className="playing-section-close-button"
+      style={{
+        position: 'absolute',
+        top: 12,
+        right: 12,
+        zIndex: 10,
+        background: 'transparent',
+        border: 'none',
+        cursor: 'pointer',
+        padding: 0,
+      }}
+      onClick={() => {
+        dispatch(libraryActions.removeSongPlaying());
+      }}
+      aria-label="Close"
+    >
+      <CloseIcon />
+    </button>
   );
 };
 
 export const NowPlayingLayout: FC<NowPlayingLayoutProps> = (props) => {
   return (
-    <div className='playing-section'>
-      <Row align='middle'>
-        <Col span={20}>
-          {props.title ? <p className='playing-section-title'>{props.title}</p> : null}
-        </Col>
-        <Col span={4}>
-          <CloseButton />
-        </Col>
-      </Row>
-
+    <div className="playing-section" style={{ position: 'relative' }}>
+      <CloseButton />
+      {props.title ? <p className="playing-section-title">{props.title}</p> : null}
       {props.children}
     </div>
   );

@@ -20,7 +20,7 @@ export const MobileMenu = () => {
         <HomeIcon />
         <p>{t('Home')}</p>
       </button>
-      <a href='https://github.com/sujal-GITHUB/portfolio' target='_blank' rel='noreferrer'>
+      <a href='https://github.com/sujal-GITHUB/Spotifolio' target='_blank' rel='noreferrer'>
         <SearchIcon />
         <p>{t('Source code')}</p>
       </a>

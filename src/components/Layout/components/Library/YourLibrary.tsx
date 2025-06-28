@@ -11,7 +11,6 @@ import { Tooltip } from '../../../Tooltip';
 import PlaylistCardShort from './PlaylistCardShort';
 
 // I18n
-import { LanguageButton } from './Language';
 import { useTranslation } from 'react-i18next';
 
 // Redux
@@ -91,9 +90,7 @@ const YourLibrary = ({ playlists }: { playlists: Playlist[] }) => {
             })}
           </div>
         </Col>
-        <Col style={{ maxHeight: 40 }}>
-          <LanguageButton />
-        </Col>
+        
       </div>
     </div>
   );

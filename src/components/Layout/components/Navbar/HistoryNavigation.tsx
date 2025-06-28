@@ -1,7 +1,7 @@
 import { Space } from 'antd';
 import ForwardBackwardsButton from '../../../../pages/Home/ForwardBackwardsButton';
-import NavigationButton from './NavigationButton';
-import { LiaLaptopCodeSolid } from 'react-icons/lia';
+import { NavigationButton } from './NavigationButton';
+import { Logo } from './Logo'
 import { useTranslation } from 'react-i18next';
 
 const HistoryNavigation = () => {
@@ -11,9 +11,9 @@ const HistoryNavigation = () => {
       <NavigationButton
         text={t('Source code')}
         onClick={() => {
-          window.open('https://github.com/sujal-GITHUB/portfolio', '_blank');
+          window.open('https://github.com/sujal-GITHUB/Spotifolio', '_blank');
         }}
-        icon={<LiaLaptopCodeSolid size={25} fill='white' />}
+        icon={<Logo />}
       />
 
       <div className='flex flex-row items-center gap-2 h-full'>
