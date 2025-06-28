@@ -1,7 +1,7 @@
 {
   "name": "Spotifolio",
   "version": "2.0.1",
-  "homepage": ".",
+  "homepage": "/",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
