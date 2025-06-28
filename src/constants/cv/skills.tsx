@@ -12,40 +12,50 @@ import type { Playlist, Song } from '../../interfaces/types';
 
 export enum SkillsTypesEnum {
   CURRENT = 'CURRENT',
-  PAST_FREQUENTLY = 'PAST_FREQUENTLY',
-  PAST_OCCASIONALLY = 'PAST_OCCASIONALLY',
 }
 
 const CURRENT = [
+  tags.Cpp,
   tags.React,   
   tags.TypeScript,
   tags.AWS,
-  tags.Docker,        
+  tags.Docker,
+  tags.PyTorch,        
   tags.Express,         
-  tags.Redux,        
-  tags.Git,             
-  tags['CI/CD'], 
+  tags.Redux,  
+  tags.Pandas,
+  tags.NumPy,
+  tags.Hadoop,      
+  tags.Git,  
+  tags.JavaScript,
+  tags.TensorFlow,
+  tags.ScikitLearn,
+  tags.Python, 
   tags.Linux,
   tags.Tailwindcss,
   tags['Node.js'],
   tags.Vite,
-  tags.JWT,  
-] 
-
-const PAST_FREQUENTLY = [     
-  tags.Firebase,         
+  tags.JWT,         
   tags.Mysql,         
   tags.Mongo,
-  tags.Redis,
+  tags.EJS,
+  tags.FastAPI,
+  tags.Streamlit,
+  tags.GenAI,
+  tags.Prisma,
+  tags.WebSocket,
+  tags.HTML,
+  tags.CSS,
+  tags.Razorpay,
+  tags.Stripe,
   tags.PostgreSQL,      
   tags.Postman,         
   tags.GitHub,
-  tags.Bootstrap,        
-];
+  tags.Bootstrap,     
+] 
 
 const AVAILABLE_SKILLS = {
   CURRENT,
-  PAST_FREQUENTLY,
 };
 
 const mapTag = (
@@ -87,14 +97,12 @@ export const SKILLS_SONGS = Object.entries(AVAILABLE_SKILLS)
 
 export const Skills = {
   name: 'SKILLS',
-  color: '#4f596e',
+  color: '#A5BBAF',
   songs: SKILLS_SONGS,
   defaultFilter: SkillsTypesEnum.CURRENT,
   description: 'Description 5',
   filters: [
     SkillsTypesEnum.CURRENT,
-    SkillsTypesEnum.PAST_FREQUENTLY,
-    SkillsTypesEnum.PAST_OCCASIONALLY,
   ],
   getImage(lang) {
     return getAlbumPath('skills.png');

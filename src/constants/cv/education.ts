@@ -58,7 +58,7 @@ export const Education = {
     NIT_JALANDHAR,
     BHARTIYA_VIDYA_MANDIR,
   ],
-  color: '#74725f',
+  color: '#709D4E',
   getImage(lang) {
     return getAlbumPath('education.png');
   },

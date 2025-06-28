@@ -27,7 +27,10 @@ export const Munchmate = {
     tags.Mongo,
     tags.Tailwindcss,
     tags.Stripe,
+    tags.Vite,
+    tags.Express,
     tags.JWT,
+    tags.JavaScript
   ],
   images: [
     getProjectPath('munchmate/1.png'),
@@ -76,9 +79,11 @@ export const Routeify = {
     tags['Node.js'],
     tags.Mongo,
     tags.Tailwindcss,
+    tags.Vite,
     tags.SocketIO,
     tags.Redux,
     tags.Razorpay,
+    tags.JavaScript
   ],
   images: [
     getProjectPath('routeify/1.png'),
@@ -102,12 +107,14 @@ export const SereneStay = {
     tags['Node.js'],
     tags.Mongo,
     tags.Express,
+    tags.Vite,
     tags.Tailwindcss,
     tags.Redux,
     tags.JWT,
     tags.Stripe,
     tags.Hadoop,
     tags.ApacheMahout,
+    tags.JavaScript
   ],
   images: [
     getProjectPath('serenestay/1.png'),
@@ -134,6 +141,8 @@ export const ZingGuru = {
   skills: [
     tags.React,
     tags['Node.js'],
+    tags.JavaScript,
+    tags.Vite,
     tags.Mongo,
     tags.Express,
     tags.Tailwindcss,
@@ -156,6 +165,33 @@ export const ZingGuru = {
   github: 'https://github.com/ekas-7/Zing-Guru',
 } as Song;
 
+export const Spotifolio = {
+  name: 'Spotifolio',
+  artist: 'Sujal Kumar',
+  length: '2025',
+  types: [ProjectTypesEnum.WEB],
+  description:
+    'Spotifolio is a Spotify-inspired portfolio web application that transforms personal projects into an interactive music-like experience. Each project is visualized like an album or track, complete with play/pause animations, custom playlists, dynamic routing, and elegant UI transitions, providing a unique and engaging way to showcase technical work.',
+  imageUrl: getProjectPath('spotifolio.png'),
+  skills: [
+    tags.React,
+    tags.TypeScript,
+    tags.Tailwindcss,
+    tags.HTML,
+    tags.CSS,
+    tags.JavaScript,
+  ],
+  images: [
+    getProjectPath('spotifolio/1.png'),
+    getProjectPath('spotifolio/2.png'),
+    getProjectPath('spotifolio/3.png'),
+    getProjectPath('spotifolio/4.png'),
+    getProjectPath('spotifolio/5.png'),
+  ],
+  github: 'https://github.com/sujal-GITHUB/Spotifolio',
+} as Song;
+
+
 export const Parallelia = {
   name: 'Parallelia',
   artist: 'Sujal Kumar',
@@ -168,6 +204,7 @@ export const Parallelia = {
     tags.React,
     tags['Node.js'],
     tags.PostgreSQL,
+    tags.TypeScript,
     tags.Prisma,
     tags.Express,
     tags.WebSocket,
@@ -179,6 +216,34 @@ export const Parallelia = {
   ],
   github: 'https://github.com/sujal-GITHUB/Parallelia',
 } as Song;
+
+export const MachineLearningConcepts = {
+  name: 'Machine Learning Implementation',
+  artist: 'Sujal Kumar',
+  length: '2025',
+  types: [ProjectTypesEnum.WEB],
+  description:
+    'A structured and practical implementation of various machine learning concepts and techniques. Designed to help learners and practitioners understand, apply, and experiment with machine learning algorithms and workflows across multiple domains.',
+  imageUrl: getProjectPath('machine_learning_concepts.png'),
+  skills: [
+    tags.Python,
+    tags.ScikitLearn,
+    tags.Pandas,
+    tags.TensorFlow,
+    tags.NumPy,
+    tags.TensorFlow,
+    tags.PyTorch,
+  ],
+  images: [
+    getProjectPath('machine_learning_concepts/1.png'),
+    getProjectPath('machine_learning_concepts/2.png'),
+    getProjectPath('machine_learning_concepts/3.png'),
+    getProjectPath('machine_learning_concepts/4.png'),
+    getProjectPath('machine_learning_concepts/5.png'),
+  ],
+  github: 'https://github.com/sujal-GITHUB/Machine-Learning',
+} as Song;
+
 
 export const PriceSeer = {
   name: 'PriceSeer',
@@ -204,8 +269,9 @@ export const PriceSeer = {
 
 export const PersonalProjects = {
   name: 'PROJECTS',
-  color: '#2e3f43',
+  color: '#AD9CC5',
   songs: [
+    Spotifolio,
     Munchmate,
     Routeify,
     IntelliRival,
@@ -213,6 +279,7 @@ export const PersonalProjects = {
     ZingGuru,
     Parallelia,
     PriceSeer,
+    MachineLearningConcepts,
   ],
   filters: [ProjectTypesEnum.WEB, ProjectTypesEnum.ML, ProjectTypesEnum.DEVOPS, ProjectTypesEnum.WEB3],
   getImage(lang) {

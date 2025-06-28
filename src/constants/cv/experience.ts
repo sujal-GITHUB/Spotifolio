@@ -51,9 +51,9 @@ const GRAPPLTECH = {
 
 export const ProfessionalExperience = {
   name: 'EXPERIENCE',
-  color: '#422023',
+  color: '#47607E',
   filters: [JobTypesEnum.JOB],
-  songs: [GURUKUL, GRAPPLTECH],
+  songs: [GRAPPLTECH, GURUKUL],
   getImage(lang) {
     return getAlbumPath('experience.png');
   },

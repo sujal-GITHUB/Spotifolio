@@ -1,3 +1,3 @@
-const INITIAL_VOLUME = 0.2;
+const INITIAL_VOLUME = 0.35;
 
 export { INITIAL_VOLUME };
