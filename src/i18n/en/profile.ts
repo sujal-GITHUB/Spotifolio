@@ -1,13 +1,13 @@
 export const profile = {
-  Verified: 'Verified developer',
-  'Experience years': '7 years of experience',
-  'Minutes on spotify': '83,194 minutes on Spotify (2024)',
+  Verified: 'Software Developer',
+  'Experience years': '2+ years of hands-on experience',
   'About me': 'About me',
-  'About me description': `🚀 Senior Software Engineer 🚀\n
-    \n👨‍💻 Senior Software Engineer with 7 years of experience in web and mobile application development.
-    \n📍 Based in Buenos Aires, Argentina.
-    \n💼 Currently specialized in Typescript projects, covering both frontend (React.js) and backend (Node.js) development, with experience in mobile development (React Native / Ionic / Expo). Additionally, I have worked with other programming languages such as Python and PHP.
-    \n⚙️ Passionate about automation and continuous improvement, I have also had the opportunity to work on DevOps tasks, optimizing processes and ensuring efficiency in the software development lifecycle.
-    \n🔍 Always seeking new challenges and opportunities to apply my technical skills and passion for technology in dynamic and collaborative environments.
-    `,
+  'About me description': `Software Developer | B.Tech IT @ NIT Jalandhar\n
+  \n- Pursuing B.Tech in Information Technology at Dr. B. R. Ambedkar National Institute of Technology, Jalandhar (2022–2026).\n
+  \n- Full-stack developer skilled in React.js, Next.js, Node.js, Express.js, and Tailwind CSS, with a strong foundation in data structures and algorithms.\n
+  \n- Built scalable applications like Routeify (ride-sharing) and Munchmate (food delivery), integrating real-time features, secure payments, and performance optimization.\n
+  \n- Experienced in backend technologies (Flask, FastAPI, Microservices) and databases (MongoDB, PostgreSQL, MySQL, Redis), with focus on efficient system design.\n
+  \n- Proficient in DevOps and tools such as Docker, GitHub, CI/CD, and cloud platforms including AWS, Firebase, and Vercel.\n
+  \n- 2nd Runner-up at HackTU 6.0; 500+ DSA problems solved on LeetCode, GFG, and CodeStudio with Expert rating.\n
+  \n- Driven by curiosity, continuous learning, and delivering impactful technical solutions through collaboration and innovation.`,
 };

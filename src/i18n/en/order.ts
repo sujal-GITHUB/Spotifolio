@@ -2,7 +2,7 @@ export const order = {
   ALL: 'All',
 
   // Experience
-  JOB: 'Jobs',
+  JOB: 'Internships',
 
   // Publications
   COURSE: 'Courses',
@@ -11,13 +11,9 @@ export const order = {
 
   // Projects
   WEB: 'Websites',
-  MOBILE: 'Mobile Apps',
-  PERSONAL_PROJECTS: 'Personal Projects',
-
-  // Certificates
-  THESIS: 'Thesis',
-  JOURNAL: 'Journal',
-  CONFERENCE: 'Conference',
+  DEVOPS: 'DevOps',
+  MACHINE_LEARNING: 'Machine Learning',
+  WEB3 : 'Web3',
 
   // Skills
   CURRENT: 'Currently using',
