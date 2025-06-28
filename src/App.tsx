@@ -48,7 +48,7 @@ const RootComponent = () => {
 
   return (
     <>
-      <Router basename='portfolio'>
+      <Router basename='/'>
         <AppLayout>
           <div className='Main-section' ref={container}>
             <div style={{ minHeight: 'calc(100vh - 230px)', width: '100%' }}>
