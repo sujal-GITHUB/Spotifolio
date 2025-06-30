@@ -251,7 +251,7 @@ const GenAI = {
     'Generative AI refers to algorithms that can generate new content, such as text, images, or music, based on learned patterns from existing data.',
   GENERATIVE_AI_EXPERIENCE:
     'I have worked with Generative AI models to create applications that generate text and images, leveraging frameworks like Gemini, OpenAI’s GPT and DALL-E.',
-  GENERATEIVE_AI_YEARS: '1 year',
+  GENERATIVE_AI_YEARS: '1 year',
 };
 
 const Prisma = {

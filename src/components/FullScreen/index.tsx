@@ -42,7 +42,7 @@ export const FullScreenPlayer: FC<FullScreenPlayerProps> = (props) => {
           zIndex: -1,
         }}
       >
-        <source src="/portfolio/videos/1.mp4"/>
+        <source src="/videos/1.mp4"/>
       </video>
       <div style={{ width: '100%', padding: 60 }}>
         <Row gutter={[24, 24]} justify='center' style={{ alignItems: 'baseline' }}>
