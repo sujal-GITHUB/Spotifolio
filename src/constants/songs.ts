@@ -1,17 +1,18 @@
 export const AVAILABLE_SONGS = [
-  {
-    file: '0.mp3',
-    name: 'Hamare Saath Shri Raghunath',
-    artist: 'Sagar Kendurkar',
-    color: '#F66F1A',
-    image: '1.jpg',
-  },
+
   {
     file: '1.mp3',
     name: 'Superman',
     artist: 'Eminem',
     color: '#75201D',
     image: '2.jpg',
+  },
+  {
+    file: '0.mp3',
+    name: 'Hamare Saath Shri Raghunath',
+    artist: 'Sagar Kendurkar',
+    color: '#F66F1A',
+    image: '1.jpg',
   },
   {
     file: '2.mp3',
