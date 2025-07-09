@@ -73,7 +73,7 @@ export const Routeify = {
   types: [ProjectTypesEnum.WEB],
   description: 'Routeify is a full-stack real-time ride-hailing web application that allows users to book rides, track drivers, and make secure payments. The platform includes real-time location updates, fare calculation, and live driver-rider communication using WebSockets. It features separate portals for riders and drivers, JWT-based authentication, Razorpay-powered payments, and a responsive UI built with React and Tailwind CSS.',
   imageUrl: getProjectPath('routeify.png'),
-  github: 'https://github.com/sujal-GITHUB/IntelliRival/routeify',
+  github: 'https://github.com/sujal-GITHUB/Routeify',
   link: 'https://routeify.onrender.com/',
   skills: [
     tags.React,
