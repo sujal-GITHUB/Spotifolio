@@ -1,4 +1,5 @@
 import './styles/App.scss';
+import { Analytics } from "@vercel/analytics/react"
 
 // Utils
 import i18next from 'i18next';
@@ -75,6 +76,7 @@ function App() {
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <RootComponent />
+          <Analytics/>
         </PersistGate>
       </Provider>
     </ConfigProvider>
