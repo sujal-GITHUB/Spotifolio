@@ -1,0 +1,47 @@
+import type { Playlist, Song } from '../../interfaces/types';
+import { getAlbumPath, getBlogPath } from '../../utils/getPublicPath';
+
+export enum BlogTypesEnum {
+  INTERVIEW_PREP = 'Interview Prep',
+  CAREER_ADVICE = 'Career Advice',
+  DSA = 'DSA',
+  PROBLEM_SOLVING = 'Problem Solving',
+  PROGRAMMING = 'Programming',
+  OOP = 'OOP',
+  SYSTEM_DESIGN = 'System Design',
+}
+
+const MINI_STACKOVERFLOW_SYSTEM = {
+  name: 'Building a Mini StackOverflow Clone in C++ with OOP',
+  artist: 'Sujal Kumar',
+  length: '2025',
+  types: [BlogTypesEnum.PROGRAMMING, BlogTypesEnum.OOP, BlogTypesEnum.SYSTEM_DESIGN],
+  description: `This article walks through building a simplified StackOverflow-like platform in C++ using object-oriented programming principles. 
+It covers creating classes for User, Question, Answer, and a Singleton System to manage them, demonstrating OOP concepts like encapsulation, class relationships, and design patterns.`,
+  link: 'https://medium.com/@sujal21102004/building-a-mini-stackoverflow-clone-in-c-with-oop-64bb9571d688',
+  imageUrl: getBlogPath('2.jpeg'),
+  skills: [],
+} as Song;
+
+
+const Q_AND_A_SYSTEM = {
+  name: 'Why Interviews Are More About Luck Than Skill',
+  artist: 'Sujal Kumar',
+  length: '2025',
+  types: [BlogTypesEnum.CAREER_ADVICE, BlogTypesEnum.INTERVIEW_PREP],
+  description: `Technical interviews often feel unpredictable. Despite months of preparation, the questions you get, the interviewer's mood, your mental state, timing, and competition can all influence the outcome. 
+Luck plays a significant role, alongside skill, in determining success. Preparing well maximizes your chances when luck strikes.`,
+  link: 'https://medium.com/@sujal21102004/why-interviews-are-more-about-luck-than-skill-ebc95cb0b0db?postPublishedType=initial',
+  imageUrl: getBlogPath('1.jpeg'),
+  skills: [],
+} as Song;
+
+export const Blogs = {
+  name: 'Blogs',
+  description: 'Insights and advice for career growth and tech interviews.',
+  songs: [Q_AND_A_SYSTEM, MINI_STACKOVERFLOW_SYSTEM],
+  color: '#709D4E',
+  getImage(lang) {
+    return getAlbumPath('blogs.png');
+  },
+} as Playlist;

@@ -2,12 +2,14 @@ import { SkillsTypesEnum } from '../constants/cv/skills';
 import { JobTypesEnum } from '../constants/cv/experience';
 import { EducationTypesEnum } from '../constants/cv/education';
 import { ProjectTypesEnum } from '../constants/cv/personalProjects';
+import { BlogTypesEnum } from '../constants/cv/blogs';
 
 type SongType =
   | JobTypesEnum
   | SkillsTypesEnum
   | ProjectTypesEnum
   | EducationTypesEnum
+  | BlogTypesEnum;
 
 
 export type Song = {
