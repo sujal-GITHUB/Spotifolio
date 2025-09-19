@@ -23,6 +23,16 @@ It covers creating classes for User, Question, Answer, and a Singleton System to
   skills: [],
 } as Song;
 
+const COMPILER_BLOG = {
+  name: 'The Compiler’s Secret Life: A Wild Ride Through Lexing, Parsing, and Other Dark Arts',
+  artist: 'Sujal Kumar',
+  length: '2025',
+  types: [BlogTypesEnum.PROGRAMMING, BlogTypesEnum.SYSTEM_DESIGN],
+  description: `Compilers are more than just translators of code—they’re sophisticated systems performing magical feats behind the scenes. From lexing and parsing to optimization and code generation, each stage feels like a dark art shaping how high-level ideas transform into machine instructions. This journey unveils the hidden life of compilers and their indispensable role in modern computing.`,
+  link: 'https://medium.com/@sujal21102004/the-compilers-secret-life-a-wild-ride-through-lexing-parsing-and-other-dark-arts-8214f6f7eb18',
+  imageUrl: getBlogPath('3.jpeg'),
+  skills: [],
+} as Song;
 
 const Q_AND_A_SYSTEM = {
   name: 'Why Interviews Are More About Luck Than Skill',
@@ -39,7 +49,7 @@ Luck plays a significant role, alongside skill, in determining success. Preparin
 export const Blogs = {
   name: 'Blogs',
   description: 'Insights and advice for career growth and tech interviews.',
-  songs: [Q_AND_A_SYSTEM, MINI_STACKOVERFLOW_SYSTEM],
+  songs: [Q_AND_A_SYSTEM, MINI_STACKOVERFLOW_SYSTEM, COMPILER_BLOG],
   color: '#709D4E',
   getImage(lang) {
     return getAlbumPath('blogs.png');
