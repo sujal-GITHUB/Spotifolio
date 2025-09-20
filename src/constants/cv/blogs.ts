@@ -46,10 +46,24 @@ Luck plays a significant role, alongside skill, in determining success. Preparin
   skills: [],
 } as Song;
 
+const UBER_INTERVIEW_EXPERIENCE = {
+  name: 'My Uber On-Campus Interview Experience',
+  artist: 'Sujal Kumar',
+  length: '2025',
+  types: [BlogTypesEnum.INTERVIEW_PREP, BlogTypesEnum.CAREER_ADVICE],
+  description: `I share my Uber on-campus interview journey, which had two rounds: DSA and LLD. Each round had two interviewers. 
+The process began with introductions, followed by discussions about my projects and some behavioral questions like handling challenges during development. 
+Later, I was given coding and design questions that tested problem-solving and system design thinking. This blog captures the complete experience and key takeaways.`,
+  link: 'https://medium.com/@sujal21102004/my-uber-on-campus-interview-experience-8688ccde0938',
+  imageUrl: getBlogPath('4.jpeg'),
+  skills: [],
+} as Song;
+
+
 export const Blogs = {
   name: 'Blogs',
   description: 'Insights and advice for career growth and tech interviews.',
-  songs: [Q_AND_A_SYSTEM, MINI_STACKOVERFLOW_SYSTEM, COMPILER_BLOG],
+  songs: [Q_AND_A_SYSTEM, MINI_STACKOVERFLOW_SYSTEM, COMPILER_BLOG, UBER_INTERVIEW_EXPERIENCE],
   color: '#709D4E',
   getImage(lang) {
     return getAlbumPath('blogs.png');
