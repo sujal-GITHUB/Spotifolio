@@ -95,6 +95,30 @@ export const Routeify = {
   ],
 } as Song;
 
+export const RookAndRoll = {
+  name: 'RookAndRoll',
+  artist: 'Sujal Kumar',
+  length: '2025',
+  types: [ProjectTypesEnum.WEB],
+  description: 'RookAndRoll is a beautiful, real-time multiplayer chess game built with Node.js, Socket.IO, and modern web technologies. It offers a clean and elegant UI with smooth animations, drag-and-drop piece movement, full chess rule validation using chess.js, real-time multiplayer synchronization, spectator mode, and responsive design. The platform features automatic player assignment, turn management, board flipping, and robust connection handling.',
+  imageUrl: getProjectPath('rookandroll.jpeg'),
+  github: 'https://github.com/sujal-GITHUB/RookAndRoll',
+  link: 'https://rookandroll.onrender.com/',
+  skills: [
+    tags['Node.js'],
+    tags.SocketIO,
+    tags.JavaScript,
+    tags.HTML,
+    tags.CSS,
+    tags.Tailwindcss,
+    tags.EJS
+  ],
+  images: [
+    getProjectPath('rookandroll/1.png'),
+  ],
+} as Song;
+
+
 export const SereneStay = {
   name: 'SereneStay',
   artist: 'Sujal Kumar',
