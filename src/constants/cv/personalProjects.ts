@@ -98,7 +98,7 @@ export const Routeify = {
 export const RookAndRoll = {
   name: 'RookAndRoll',
   artist: 'Sujal Kumar',
-  length: '2025',
+  length: '2023',
   types: [ProjectTypesEnum.WEB],
   description: 'RookAndRoll is a beautiful, real-time multiplayer chess game built with Node.js, Socket.IO, and modern web technologies. It offers a clean and elegant UI with smooth animations, drag-and-drop piece movement, full chess rule validation using chess.js, real-time multiplayer synchronization, spectator mode, and responsive design. The platform features automatic player assignment, turn management, board flipping, and robust connection handling.',
   imageUrl: getProjectPath('rookandroll.jpeg'),
@@ -305,6 +305,7 @@ export const PersonalProjects = {
     Parallelia,
     PriceSeer,
     MachineLearningConcepts,
+    RookAndRoll
   ],
   filters: [ProjectTypesEnum.WEB, ProjectTypesEnum.ML, ProjectTypesEnum.DEVOPS, ProjectTypesEnum.WEB3],
   getImage(lang) {
